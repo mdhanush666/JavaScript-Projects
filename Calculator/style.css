@@ -1,0 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:  #222;
+  position: relative;
+}
+
+.container{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #000;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+#btnHis{
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  padding: 0 10px;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  transition: all linear .3s;
+}
+#btnHis:hover{
+  box-shadow: 0 0 5px #000;
+}
+
+#txtPre{
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+#txtIn{
+  border: 0;
+  position: absolute;
+  top: 22%;
+  width: 95%;
+  height: 50px;
+  text-align: right;
+  font-size: 2rem;
+  padding: 0 10px;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-controls{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 5px;
+  margin-top: 45%;
+}
+
+button{
+  border: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: chocolate;
+  border-radius: 10px;
+  font-family: 'MV Boil', sans-serif;
+  transition: all linear .3s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: transparent;
+  border: 1px solid;
+}
+
+.btnNum{
+  background-color: #000;
+  cursor: grab;
+}
+.btnNum:hover{
+  background-color: transparent;
+}
+
+.his-container{
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  backdrop-filter: blur(5px);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.his-container #btnClose{
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all linear .3s;
+}
+.his-container #btnClose:hover{
+  /* border: 1px solid; */
+  background-color: #33333380;
+}
+.his-container #btnClose:active{
+  background-color: #99999950;
+}
+
+.his-container textarea{
+  position: absolute;
+  top: 15%;
+  resize: none;
+  outline: none;
+  width: 80%;
+  height: 70%;
+  border: 0;
+  border-radius: 10px;
+  background-color: #00000050;
+  font-size: 1.3rem;
+  color: #fff;  
+}
+
+.his-container #clearHis{
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all linear .3s;
+}
+
+.his-container #clearHis:hover{
+  /* border: 1px solid; */
+  background-color: #33333350;
+}
+.his-container #clearHis:active{
+  background-color: #99999920;
+}

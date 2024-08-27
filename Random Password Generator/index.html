@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Password Genarator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <table border="0">
+
+    <tr>
+      <th colspan="3">Random Password Genarator</th>
+    </tr>
+
+    <tr>
+      <td rowspan="5">
+        <div class="pyramid-loader">
+          <div class="wrapper">
+            <span class="side side1"></span>
+            <span class="side side2"></span>
+            <span class="side side3"></span>
+            <span class="side side4"></span>
+            <span class="shadow"></span>
+          </div>  
+        </div>
+      </td>
+      <td>
+        <input type="checkbox" id="chkUpperCase" class="chkBoxes"> <br>
+        <label for="chkUpperCase">UpperCase</label>
+      </td>
+      <td rowspan="5">
+        <div class="pyramid-loader">
+          <div class="wrapper">
+            <span class="side side1"></span>
+            <span class="side side2"></span>
+            <span class="side side3"></span>
+            <span class="side side4"></span>
+            <span class="shadow"></span>
+          </div>  
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" id="chkLowerCase" class="chkBoxes"> <br>
+        <label for="chkLowerCase">LowerCase</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" id="chkNumbers" class="chkBoxes"> <br>
+        <label for="chkNumbers">Numbers</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" id="chkSymbols" class="chkBoxes"> <br>
+        <label for="chkSymbols">Symbols</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <button id="btnGenerate">Generate</button>
+      </td>
+    </tr>
+
+  </table>
+  
+  <div class="popup-container">
+    <button id="btnClosePopup">X</button>
+    
+    <input type="text" id="generatedPassword" readonly></input>
+
+    <button id="btnCopy">
+      <img src="copy.png" width="20px" height="20px">      
+    </button>
+
+    <span class="tooltiptext">Copy</span>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
